@@ -39,7 +39,7 @@
     </nav>
     <div class="background-women"></div>
     <div class="dropdown-nav">
-        <h1>BOTTOMS</h1>
+        <h1>FORMAL DRESS</h1>
         <span>Sort By<select name="" id="">
             <option value="">Recommended for you</option>
             <option value="">New Arrival</option>
@@ -60,97 +60,55 @@
     var dom_women = document.getElementsByClassName("market-list");
     const dress = `[
           {
-            "ImageProduct":"Contrast Stitch Colorblock Shorts",
-            "ProductName":"Contrast Stitch Colorblock Shorts",
+            "ImageProduct":"Contrast Sequin Draped Side Split Thigh Tube Formal Dress",
+            "ProductName":"Contrast Sequin Draped Side Split Thigh Tube Formal Dress",
             "Price":45,
             "Tags":"Dress #TopRated",
             "Ratings":4.9
         },{
-            "ImageProduct":"Drawstring Front Flare Leg Pants",
-            "ProductName":"Drawstring Front Flare Leg Pants",
+            "ImageProduct":"Contrast Sequin One Shoulder Mesh Hem Formal Dress ( Navy Blue )",
+            "ProductName":"Contrast Sequin One Shoulder Mesh Hem Formal Dress ( Navy Blue )",
             "Price":30,
             "Tags":"#Dress",
             "Ratings":4.9
         },{
-            "ImageProduct":"Grunge Punk Solid Belted Chain Cut-out Pants",
-            "ProductName":"Grunge Punk Solid Belted Chain Cut-out Pants",
+            "ImageProduct":"Fold Pleated Detail Off Shoulder Satin Formal Dress ( Blue )",
+            "ProductName":"Fold Pleated Detail Off Shoulder Satin Formal Dress ( Blue )",
             "Price":30,
             "Tags":"#Dress #TopRated",
             "Ratings":4.5
         },{
-            "ImageProduct":"High Waist Asymmetrical Hem PU Leather Bodycon Skirt",
-            "ProductName":"High Waist Asymmetrical Hem PU Leather Bodycon Skirt",
+            "ImageProduct":"Glitter Bodice High Low Satin Formal Dress ( Black )",
+            "ProductName":"Glitter Bodice High Low Satin Formal Dress ( Black )",
             "Price":45,
             "Tags":"#Dress #TopRated",
             "Ratings":4.9
         },{
-            "ImageProduct":"High Waist Wide Leg Jeans",
-            "ProductName":"High Waist Wide Leg Jeans",
+            "ImageProduct":"Off Shoulder Contrast Mesh Sequin Formal Dress ( Black )",
+            "ProductName":"Off Shoulder Contrast Mesh Sequin Formal Dress ( Black )",
             "Price":40,
             "Tags":"#Dress",
             "Ratings":4.9
         },{
-            "ImageProduct":"High Waisted Flap Pocket Cargo Jeans ( Black )",
-            "ProductName":"High Waisted Flap Pocket Cargo Jeans ( Black )",
+            "ImageProduct":"One Shoulder Contrast Sequin Draped Front Floor Length Formal Dress",
+            "ProductName":"One Shoulder Contrast Sequin Draped Front Floor Length Formal Dress",
             "Price":40,
             "Tags":"#Dress",
             "Ratings":4.9
         },{
-            "ImageProduct":"Honeyspot Solid High Waist Slit Thigh Skirt ( Black )",
-            "ProductName":"Honeyspot Solid High Waist Slit Thigh Skirt ( Black )",
+            "ImageProduct":"One Shoulder Mesh Panel Split Thigh Sequin Formal Dress ( Green )",
+            "ProductName":"One Shoulder Mesh Panel Split Thigh Sequin Formal Dress ( Green )",
             "Price":40,
             "Tags":"#Dress",
             "Ratings":4.9
         },{
-            "ImageProduct":"Paisley Print Patchwork Print Boyfriend Jeans",
-            "ProductName":"Paisley Print Patchwork Print Boyfriend Jeans",
+            "ImageProduct":"One Shoulder Ruffle Trim Glitter Prom Dress ( Dark Green )",
+            "ProductName":"One Shoulder Ruffle Trim Glitter Prom Dress ( Dark Green )",
             "Price":50,
             "Tags":"#Dress",
             "Ratings":4.9
-        },{
-            "ImageProduct":"Solid Button Front Shorts",
-            "ProductName":"Solid Button Front Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid Grommet Eyelet Garter Shorts With Chain",
-            "ProductName":"Solid Grommet Eyelet Garter Shorts With Chain",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid High Waist Flared Skirt ( Black )",
-            "ProductName":"Solid High Waist Flared Skirt ( Black )",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid PU Leather Skater Skirt",
-            "ProductName":"Solid PU Leather Skater Skirt",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid Ripped Raw Hem Shorts",
-            "ProductName":"Solid Ripped Raw Hem Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Sweetness Lace Up Shorts",
-            "ProductName":"Sweetness Lace Up Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Unity Floral Print Biker Shorts",
-            "ProductName":"Unity Floral Print Biker Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
         }
-    ]`
+    ] `
 
     const json_dress = JSON.parse(dress);
     console.log(json_dress)
@@ -159,7 +117,7 @@
        <a href="">
                 <div class="shop-card">
                     <div class="image-product">
-                        <img src="Women Bottoms/`+json_dress[key].ImageProduct+`.png" alt="">
+                        <img src="Women Formal Dress/`+json_dress[key].ImageProduct+`.png" alt="">
                     </div>
                     <div class="product-info">
                         <h3>`+json_dress[key].ProductName+`</h3>
