@@ -1,0 +1,118 @@
+
+.background {
+    transition: .3s;
+    background-repeat: no-repeat;
+    height: 84vh;
+    width: 100%;
+    filter: blur(5px);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+button{
+    border:none;
+    outline: none;
+    background: none;
+}a {
+    text-decoration: none;
+    color:white;
+}
+.nav {
+    background-color: #E76161;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}.nav i {
+    font-size: 20px;
+}.nav button {
+   color:white;
+}.nav-left{
+    width: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search-bar{
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10px;
+    width: 80%;
+}.search-input > * {
+    font-size: 1rem;
+}
+.search-input input {
+    width: 90%;
+    border:none;
+    outline: none;
+    padding-left:10px;
+}.search-input button {
+    padding-left: 5px;
+    color:#E76161;
+}a:hover , button:hover {
+    cursor: pointer;
+    color:black;
+}.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    transform: translateX(250px);
+}.category {
+    background-color: #F6BA6F;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-evenly;
+}.category span {
+    font-weight: bold;
+    text-transform: uppercase;
+}.category a {
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+}
+.category a:hover {
+    background-color: #E76161;
+    color:#FEFF86;
+}.slider-container {
+    margin-top: 50px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.6);
+    width: 80%;
+    height: 60vh;
+    margin:auto;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}.button-slider {
+    position: absolute;
+    width:100px;
+    height: 100%;
+    z-index:1;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}.button-slider button{
+    /* margin:auto; */
+    font-size:5rem;
+    opacity: .5;
+}
+.right{
+    right:0;
+}
+.button-slider button:hover{
+    color:white;
+}
+.slider-image{
+    height: 100%;
+    display: flex;
+    
+}.slider-image img{
+    height: 100%;
+    width: 115vh;
+}

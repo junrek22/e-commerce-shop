@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/women.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>HOME</title>
+</head>
+<body>
+   
+    <nav class="nav">
+        <div class="nav-left">
+            <span><a href="index.html"><i class="fa-solid fa-house"></i></a></span>
+            <div class="search-bar">
+                <form action="" method="" class="search-input">
+                    <input type="text" name="" id="" placeholder="Search something">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button><i class="fa-solid fa-bell"></i></button>
+            <button><i class="fa-solid fa-user"></i></button>
+        </div>
+        <div class="notif-drop-downs">
+        </div>
+        <div class="profile-drop-downs">
+        </div>
+    </nav>
+    <nav class="category">
+        <span><a href="women.html">Women</a></span>
+        <span><a href="men.html">Men</a></span>
+        <span><a href="size.html">Plus Size</a></span>
+        <span><a href="kids.html">Kids </a></span>
+        <span><a href="pets.html">Pets</a></span>
+    </nav>
+    <div class="background-women"></div>
+    <div class="women-category">
+        <h1>CATEGORY</h1>
+        <div class="women-select">
+    
+        </div>
+    </div>
+</body>
+<script>
+    var dom_women = document.getElementsByClassName("women-select");
+    let women_category = ['dress', 'tops', 'bottom', 'swimsuit', 't-shirt', 'two-piece', 'jumpsuit', 'shoes'];
+    for (const key in women_category) {
+       dom_women[0].innerHTML += `
+       <a href="women/`+women_category[key]+`.html">
+                <div class="women-card">
+                    <img src="categories/women/`+women_category[key]+`.png" alt="">
+                    <h2>`+women_category[key]+`</h2>
+                </div>
+            </a>
+       `;
+    }
+</script>
+</html>
