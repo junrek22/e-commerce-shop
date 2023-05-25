@@ -85,7 +85,7 @@ button{
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background: url("women-background.png");
+    background: url("../women-background.png");
     filter: blur(10px);
     background-size: 100% 100%;
     top:0;
@@ -109,14 +109,17 @@ button{
     justify-content: space-between;
     align-items: center;
 }.dropdown-nav h1{
-    font-size: 4rem;
+    font-size: 3rem;
+    color: #FFCE38;
+}.dropdown-nav h3{
+    font-size: 3rem;
     color: #FFCE38;
 }.dropdown-nav span , select{
     font-size: 1.25rem;
 }.dropdown-nav select{
     margin-left: 10px;
     padding: 5px;
-    background-color: #E76161;
+    background-color: #F6BA6F;
 }.dropdown-nav select option{
     border-bottom: 1px solid black;
 }.market-list {

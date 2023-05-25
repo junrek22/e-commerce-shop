@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/dress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>HOME</title>
+</head>
+<body>
+   
+    <nav class="nav">
+        <div class="nav-left">
+            <span><a href="../index.html"><i class="fa-solid fa-house"></i></a></span>
+            <div class="search-bar">
+                <form action="" method="" class="search-input">
+                    <input type="text" name="" id="" placeholder="Search something">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button><i class="fa-solid fa-bell"></i></button>
+            <button><i class="fa-solid fa-user"></i></button>
+        </div>
+        <div class="notif-drop-downs">
+        </div>
+        <div class="profile-drop-downs">
+        </div>
+    </nav>
+    <nav class="category">
+        <span><a href="../women.html">Women</a></span>
+        <span><a href="../men.html">Men</a></span>
+        <span><a href="../size.html">Plus Size</a></span>
+        <span><a href="../kids.html">Kids </a></span>
+        <span><a href="../pets.html">Pets</a></span>
+    </nav>
+    <div class="background-women"></div>
+    <div class="dropdown-nav">
+        <h1>TWO-PIECES</h1>
+        <span>Sort By<select name="" id="">
+            <option value="">Recommended for you</option>
+            <option value="">New Arrival</option>
+            <option value="">Top rated</option>
+            <option value="">Price low - high</option>
+            <option value="">Price high - low</option>
+        </select></span>
+        
+    </div>
+   <div class="market-container">
+        
+        <div class="market-list">
+           <!-- DISPLAY THE SHOPESS -->
+        </div>
+    </div>
+</body>
+<script>
+    var dom_women = document.getElementsByClassName("market-list");
+    const dress = `[
+          {
+            "ImageProduct":"Dress1",
+            "ProductName":"Square Neck Puff Sleeve Ruffle Hem Dress",
+            "Price":45,
+            "Tags":"Dress #TopRated",
+            "Ratings":4.9
+        },{
+            "ImageProduct":"Dress2",
+            "ProductName":"Rib-knit Bodycon Dress",
+            "Price":30,
+            "Tags":"#Dress",
+            "Ratings":4.9
+        },{
+            "ImageProduct":"Dress3",
+            "ProductName":"Halter Neck Dress",
+            "Price":30,
+            "Tags":"#Dress #TopRated",
+            "Ratings":4.5
+        },{
+            "ImageProduct":"Dress4",
+            "ProductName":"Solid Shirred Waist Fold Pleated Shirt Dress",
+            "Price":45,
+            "Tags":"#Dress #TopRated",
+            "Ratings":4.9
+        },{
+            "ImageProduct":"Dress5",
+            "ProductName":"Flower Dotted Dress",
+            "Price":40,
+            "Tags":"#Dress",
+            "Ratings":4.9
+        },{
+            "ImageProduct":"Dress6",
+            "ProductName":"Drawstring Halter Dress",
+            "Price":40,
+            "Tags":"#Dress",
+            "Ratings":4.9
+        },{
+            "ImageProduct":"Dress7",
+            "ProductName":"Contrast Mesh Flounce Sleeve Tie Neck Cut Out Front Dress",
+            "Price":40,
+            "Tags":"#Dress",
+            "Ratings":4.9
+        },{
+            "ImageProduct":"Dress8",
+            "ProductName":"Breasted Bow Overall Dress",
+            "Price":50,
+            "Tags":"#Dress",
+            "Ratings":4.9
+        }
+    ] `
+
+    const json_dress = JSON.parse(dress);
+    console.log(json_dress)
+    for (const key in json_dress) {
+       dom_women[0].innerHTML += `
+       <a href="">
+                <div class="shop-card">
+                    <div class="image-product">
+                        <img src="Women Dress/`+json_dress[key].ImageProduct+`.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3>`+json_dress[key].ProductName+`</h3>
+                        <p>$ `+json_dress[key].Price+`</p>
+                        <p>`+json_dress[key].Tags+`</p>
+                        <div class="ratings">
+                            <span>`+json_dress[key].Ratings+`</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="favorites"><button><i class="fa-regular fa-heart"></i></button></span>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+       `;
+    }
+</script>
+</html>
