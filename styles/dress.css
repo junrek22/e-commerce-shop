@@ -96,11 +96,11 @@ button{
     height: 84vh;
     position: absolute;
     left: 50%;
-    top:70%;
+    top:75%;
     transform: translate(-50%, -50%);
 }.dropdown-nav{
     position: fixed;
-    top:150px;
+    top:165px;
     z-index: 1;
     left: 70px;
     display: flex;
@@ -126,6 +126,7 @@ button{
     width: 90%;
     margin: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 45px;
    

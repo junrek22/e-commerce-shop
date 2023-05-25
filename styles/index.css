@@ -1,4 +1,6 @@
-
+body {
+    overflow: hidden;
+}
 .background {
     transition: .3s;
     background-repeat: no-repeat;
@@ -81,12 +83,12 @@ button{
 }.slider-container {
     margin-top: 50px;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.6);
-    width: 80%;
+    width: 115vh;
     height: 60vh;
     margin:auto;
     overflow: hidden;
     position: absolute;
-    top:50%;
+    top:60%;
     left:50%;
     transform: translate(-50%, -50%);
 }.button-slider {
