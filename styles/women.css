@@ -1,131 +1,13 @@
-
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-button{
-    border:none;
-    outline: none;
-    background: none;
-}a {
-    text-decoration: none;
-    color:white;
-}
-.nav {
-    background-color: #E76161;
-    height: 70px;
-    display: flex;
-    align-items: center;
-}.nav i {
-    font-size: 20px;
-}.nav button {
-   color:white;
-}.nav-left{
-    width: 60vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.search-bar{
-    background-color: #fff;
-    border-radius: 40px;
-    padding: 10px;
-    width: 80%;
-}.search-input > * {
-    font-size: 1rem;
-}
-.search-input input {
-    width: 90%;
-    border:none;
-    outline: none;
-    padding-left:10px;
-}.search-input button {
-    padding-left: 5px;
-    color:#E76161;
-}a:hover , button:hover {
-    cursor: pointer;
-    color:black;
-}.icons {
-    display: flex;
-    justify-content: space-between;
-    width: 130px;
-    transform: translateX(250px);
-}.category {
-    background-color: #F6BA6F;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-items: stretch;
-    justify-content: space-evenly;
-}.category span {
-    font-weight: bold;
-    text-transform: uppercase;
-}.category a {
-    padding: 15px 40px 15px 40px;
-    border-radius: 5px;
-}.category span:nth-child(1) a{
-    background-color: #E76161;
-    color:#FEFF86;
-}
-.category a:hover {
-    background-color: #E76161;
-    color:#FEFF86;
-}
-.women-category{
-    width: 100%;
-    height: 80vh;
-    position: absolute;
-    top:65%;
-    left:50%;
-    transform: translate(-50%, -50%);
-
-}.women-category h1{
-    text-align: center;
-    color: #E76161;
-    font-size: 3rem;
-}
-.women-select{
-    position: absolute;
-    top:40%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    height: 39vh;
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 150px 150px 150px 150px;
-    gap:50px;
-}.women-card:hover {
-    box-shadow: 0px 0px 20px 5px white;
-    border:1px solid white;
-}.women-select a:hover{
-    color:#FEFF86;
-}
-.women-card{
-    transition: .2s;
-    border-radius: 20px;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-color: black;
-    overflow: hidden;
-}.women-card img{
-    width: 100%;
-    opacity: .7;
-}.women-card h2{
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}.background-women {
+@import url("nav-and-category.css");
+@import url("category-menu.css");
+.background-women {
+    top:0;
     background-repeat: no-repeat;
-    height: 84vh;
+    height: 100vh;
     width: 100%;
     background: url("../women-background.png");
     filter: blur(10px);
     background-size: 100% 100%;
-    /* background-attachment: fixed;  */
+   position: absolute;
+   z-index: -1;
 }
