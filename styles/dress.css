@@ -102,9 +102,9 @@ button{
     position: fixed;
     top:165px;
     z-index: 1;
-    left: 70px;
+    left: 108px;
     display: flex;
-    width: 90%;
+    width: 84%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -115,13 +115,14 @@ button{
     font-size: 3rem;
     color: #FFCE38;
 }.dropdown-nav span , select{
+    color:#E76161;
     font-size: 1.25rem;
 }.dropdown-nav select{
+    outline-color: #E76161;
     margin-left: 10px;
     padding: 5px;
     background-color: #F6BA6F;
-}.dropdown-nav select option{
-    border-bottom: 1px solid black;
+    border:none;
 }.market-list {
     width: 90%;
     margin: auto;
