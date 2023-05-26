@@ -10,4 +10,7 @@
     background-size: 100% 100%;
    position: absolute;
    z-index: -1;
+}.category span:nth-child(2) a{
+    background-color: #E76161;
+    color:#FEFF86;
 }

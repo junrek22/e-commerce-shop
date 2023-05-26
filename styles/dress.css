@@ -10,4 +10,7 @@
     top:0;
     z-index: -1;
     position: fixed;
+}.category span:nth-child(1) a{
+    background-color: #E76161;
+    color:#FEFF86;
 }

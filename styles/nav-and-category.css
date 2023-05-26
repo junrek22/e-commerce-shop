@@ -45,6 +45,8 @@ button{
     border:none;
     outline: none;
     padding-left:10px;
+}.search-input input::placeholder {
+    color:#E76161;
 }.search-input button {
     padding-left: 5px;
     color:#E76161;
@@ -73,9 +75,6 @@ button{
 }.category a {
     padding: 15px 40px 15px 40px;
     border-radius: 5px;
-}.category span:nth-child(1) a{
-    background-color: #E76161;
-    color:#FEFF86;
 }
 .category a:hover {
     background-color: #E76161;
