@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles/buy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Purchasing</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $(".product-info h1").html(window.localStorage.getItem("name"));
+        $(".product-info h3").html("$ "+window.localStorage.getItem("price"));
+        $(".star-rating").html(window.localStorage.getItem("ratings"));
+        $(".image-product img").attr("src" , window.localStorage.getItem("image")+".png");
+    });
+    </script>
 </head>
 <body>
     <nav class="nav">
@@ -40,12 +49,12 @@
         <div class="buy-container">
             <div class="buy-box">
                 <div class="image-product">
-
+                    <img src="" alt="">
                 </div>
                 <div class="product-info">
                     <h1>ISLANDER SHOE - NIKE</h1>
                     <div class="ratings">
-                        <span>4.9</span>
+                        <span class="star-rating">4.9</span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -53,7 +62,7 @@
                         <span class="fa fa-star"></span>
                         <span class="review">15.1K</span>
                     </div>
-                    <h3>150</h3>
+                    <h3>$150.34</h3>
                     <div class="prod-custom">
                         <div class="color"> 
                             <span>Color:</span>

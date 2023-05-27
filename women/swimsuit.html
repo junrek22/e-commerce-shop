@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/dress.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>HOME</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../scripts/swimsuit-data.js"></script>
 </head>
 <body>
    
@@ -135,10 +137,11 @@
     ] `
 
     const json_dress = JSON.parse(dress);
-    console.log(json_dress)
+    let item = []
     for (const key in json_dress) {
+        item[key] = "item"+key;
        dom_women[0].innerHTML += `
-       <a href="">
+       <a href="../buy.html" class="shop-select" id="item`+key+`">
                 <div class="shop-card">
                     <div class="image-product">
                         <img src="Women Swimwear/`+json_dress[key].ImageProduct+`.png" alt="">
