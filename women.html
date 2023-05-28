@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/women.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>HOME</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="scripts/dropdown-profile-notif.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -22,13 +24,22 @@
         <div class="icons">
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <button><i class="fa-solid fa-bell"></i></button>
-            <button><i class="fa-solid fa-user"></i></button>
-        </div>
-        <div class="notif-drop-downs">
-        </div>
-        <div class="profile-drop-downs">
+            <button><i class="fa-solid fa-user" id="profile-button"></i></button>
         </div>
     </nav>
+    <div class="profile-drop-downs drp-down hide-profile">
+        <a href="">
+            <div class="profile">
+                <img src="" alt="">
+                JHUNRHICK TARRE
+            </div>
+        </a>
+        <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+        <a href=""><i class="fa-solid fa-headphones"></i>Contact us</a>
+        <a href=""><i class="fa-solid fa-users"></i>About us</a>
+        <a href=""><i class="fa-solid fa-message"></i>FAQ</a>
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+    </div>
     <nav class="category">
         <span><a href="women.html">Women</a></span>
         <span><a href="men.html">Men</a></span>

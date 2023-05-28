@@ -9,6 +9,7 @@
     <title>HOME</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="../scripts/bottom-data.js"></script>
+    <script src="../scripts/dropdown-profile-notif.js"></script>
 </head>
 <body>
    
@@ -25,13 +26,24 @@
         <div class="icons">
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <button><i class="fa-solid fa-bell"></i></button>
-            <button><i class="fa-solid fa-user"></i></button>
-        </div>
-        <div class="notif-drop-downs">
-        </div>
-        <div class="profile-drop-downs">
+            <button><i class="fa-solid fa-user" id="profile-button" ></i></button>
         </div>
     </nav>
+    <div class="notif-drop-downs drp-down">
+    </div>
+    <div class="profile-drop-downs drp-down hide-profile">
+        <a href="">
+            <div class="profile">
+                <img src="" alt="">
+                JHUNRHICK TARRE
+            </div>
+        </a>
+        <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+        <a href=""><i class="fa-solid fa-headphones"></i>Contact us</a>
+        <a href=""><i class="fa-solid fa-users"></i>About us</a>
+        <a href=""><i class="fa-solid fa-message"></i>FAQ</a>
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+    </div>
     <nav class="category">
         <span><a href="../women.html">Women</a></span>
         <span><a href="../men.html">Men</a></span>
@@ -58,129 +70,5 @@
         </div>
     </div>
 </body>
-<script>
-    var dom_women = document.getElementsByClassName("market-list");
-    const dress = `[
-          {
-            "ImageProduct":"Contrast Stitch Colorblock Shorts",
-            "ProductName":"Contrast Stitch Colorblock Shorts",
-            "Price":45,
-            "Tags":"Dress #TopRated",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Drawstring Front Flare Leg Pants",
-            "ProductName":"Drawstring Front Flare Leg Pants",
-            "Price":30,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Grunge Punk Solid Belted Chain Cut-out Pants",
-            "ProductName":"Grunge Punk Solid Belted Chain Cut-out Pants",
-            "Price":30,
-            "Tags":"#Dress #TopRated",
-            "Ratings":4.5
-        },{
-            "ImageProduct":"High Waist Asymmetrical Hem PU Leather Bodycon Skirt",
-            "ProductName":"High Waist Asymmetrical Hem PU Leather Bodycon Skirt",
-            "Price":45,
-            "Tags":"#Dress #TopRated",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"High Waist Wide Leg Jeans",
-            "ProductName":"High Waist Wide Leg Jeans",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"High Waisted Flap Pocket Cargo Jeans ( Black )",
-            "ProductName":"High Waisted Flap Pocket Cargo Jeans ( Black )",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Honeyspot Solid High Waist Slit Thigh Skirt ( Black )",
-            "ProductName":"Honeyspot Solid High Waist Slit Thigh Skirt ( Black )",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Paisley Print Patchwork Print Boyfriend Jeans",
-            "ProductName":"Paisley Print Patchwork Print Boyfriend Jeans",
-            "Price":50,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid Button Front Shorts",
-            "ProductName":"Solid Button Front Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid Grommet Eyelet Garter Shorts With Chain",
-            "ProductName":"Solid Grommet Eyelet Garter Shorts With Chain",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid High Waist Flared Skirt ( Black )",
-            "ProductName":"Solid High Waist Flared Skirt ( Black )",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid PU Leather Skater Skirt",
-            "ProductName":"Solid PU Leather Skater Skirt",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Solid Ripped Raw Hem Shorts",
-            "ProductName":"Solid Ripped Raw Hem Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Sweetness Lace Up Shorts",
-            "ProductName":"Sweetness Lace Up Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Unity Floral Print Biker Shorts",
-            "ProductName":"Unity Floral Print Biker Shorts",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        }
-    ]`
-
-    const json_dress = JSON.parse(dress);
-    let item = []
-    for (const key in json_dress) {
-        item[key] = "item"+key;
-       dom_women[0].innerHTML += `
-       <a href="../buy.html" class="shop-select" id="item`+key+`">
-                <div class="shop-card">
-                    <div class="image-product">
-                        <img src="Women Bottoms/`+json_dress[key].ImageProduct+`.png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h3>`+json_dress[key].ProductName+`</h3>
-                        <p>$ `+json_dress[key].Price+`</p>
-                        <p>`+json_dress[key].Tags+`</p>
-                        <div class="ratings">
-                            <span>`+json_dress[key].Ratings+`</span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="favorites"><button><i class="fa-regular fa-heart"></i></button></span>
-                        </div>  
-                    </div>
-                </div>
-            </a>
-       `;
-    }
-</script>
+    
 </html>

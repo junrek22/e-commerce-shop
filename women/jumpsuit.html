@@ -9,6 +9,7 @@
     <title>HOME</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="../scripts/jumpsuit-data.js"></script>
+    <script src="../scripts/dropdown-profile-notif.js"></script>
 </head>
 <body>
    
@@ -25,13 +26,24 @@
         <div class="icons">
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <button><i class="fa-solid fa-bell"></i></button>
-            <button><i class="fa-solid fa-user"></i></button>
-        </div>
-        <div class="notif-drop-downs">
-        </div>
-        <div class="profile-drop-downs">
+            <button><i class="fa-solid fa-user" id="profile-button" ></i></button>
         </div>
     </nav>
+    <div class="notif-drop-downs drp-down">
+    </div>
+    <div class="profile-drop-downs drp-down hide-profile">
+        <a href="">
+            <div class="profile">
+                <img src="" alt="">
+                JHUNRHICK TARRE
+            </div>
+        </a>
+        <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+        <a href=""><i class="fa-solid fa-headphones"></i>Contact us</a>
+        <a href=""><i class="fa-solid fa-users"></i>About us</a>
+        <a href=""><i class="fa-solid fa-message"></i>FAQ</a>
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+    </div>
     <nav class="category">
         <span><a href="../women.html">Women</a></span>
         <span><a href="../men.html">Men</a></span>
@@ -58,87 +70,4 @@
         </div>
     </div>
 </body>
-<script>
-    var dom_women = document.getElementsByClassName("market-list");
-    const dress = `[
-          {
-            "ImageProduct":"Dress1",
-            "ProductName":"Square Neck Puff Sleeve Ruffle Hem Dress",
-            "Price":45,
-            "Tags":"Dress #TopRated",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Dress2",
-            "ProductName":"Rib-knit Bodycon Dress",
-            "Price":30,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Dress3",
-            "ProductName":"Halter Neck Dress",
-            "Price":30,
-            "Tags":"#Dress #TopRated",
-            "Ratings":4.5
-        },{
-            "ImageProduct":"Dress4",
-            "ProductName":"Solid Shirred Waist Fold Pleated Shirt Dress",
-            "Price":45,
-            "Tags":"#Dress #TopRated",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Dress5",
-            "ProductName":"Flower Dotted Dress",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Dress6",
-            "ProductName":"Drawstring Halter Dress",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Dress7",
-            "ProductName":"Contrast Mesh Flounce Sleeve Tie Neck Cut Out Front Dress",
-            "Price":40,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        },{
-            "ImageProduct":"Dress8",
-            "ProductName":"Breasted Bow Overall Dress",
-            "Price":50,
-            "Tags":"#Dress",
-            "Ratings":4.9
-        }
-    ] `
-
-    const json_dress = JSON.parse(dress);
-    let item = []
-    for (const key in json_dress) {
-        item[key] = "item"+key;
-       dom_women[0].innerHTML += `
-       <a href="../buy.html" class="shop-select" id="item`+key+`">
-                <div class="shop-card">
-                    <div class="image-product">
-                        <img src="Women Dress/`+json_dress[key].ImageProduct+`.png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h3>`+json_dress[key].ProductName+`</h3>
-                        <p>$ `+json_dress[key].Price+`</p>
-                        <p>`+json_dress[key].Tags+`</p>
-                        <div class="ratings">
-                            <span>`+json_dress[key].Ratings+`</span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="favorites"><button><i class="fa-regular fa-heart"></i></button></span>
-                        </div>  
-                    </div>
-                </div>
-            </a>
-       `;
-    }
-</script>
 </html>

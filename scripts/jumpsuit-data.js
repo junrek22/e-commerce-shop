@@ -50,7 +50,35 @@ $(document).ready(function(){
           "Ratings":4.9
       }
   ] `
-
+  var dom_women = document.getElementsByClassName("market-list");
+  const json_dress = JSON.parse(dress);
+    let item = []
+    for (const key in json_dress) {
+        item[key] = "item"+key;
+       dom_women[0].innerHTML += `
+       <a href="../buy.html" class="shop-select" id="item`+key+`">
+                <div class="shop-card">
+                    <div class="image-product">
+                        <img src="Women Bottoms/`+json_dress[key].ImageProduct+`.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3>`+json_dress[key].ProductName+`</h3>
+                        <p>$ `+json_dress[key].Price+`</p>
+                        <p>`+json_dress[key].Tags+`</p>
+                        <div class="ratings">
+                            <span>`+json_dress[key].Ratings+`</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="favorites"><button><i class="fa-regular fa-heart"></i></button></span>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+       `;
+    }
     let json = JSON.parse(dress)
     $(".shop-select").click(function(){
         let a = $(this).attr("id");

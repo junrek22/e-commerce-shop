@@ -4,7 +4,7 @@ function Load(){
     car_slide.style.transform = 'translateX('+(-catchsize * counter) + 'px)';
 }
 const widthImage = document.getElementById('firstnode');
-const size = widthImage.clientWidth;
+let size = widthImage.clientWidth;
 const car_slide = document.getElementById('slide-image');
 const car_image = document.getElementsByClassName('slider');
 let counter = 1;
@@ -15,6 +15,7 @@ bg[0].style.background = `url(./slider/`+pics[counter-1]+`)`;
 bg[0].style.backgroundSize = `100% 100%`;
 setInterval(rightButton, 3000);
 function leftButton() {
+    size = widthImage.clientWidth;
     if(counter<=0)return;
     car_slide.style.transition = "transform 0.4s ease-in-out";
     counter--;
@@ -29,6 +30,7 @@ function leftButton() {
     console.log(counter) 
 }
 function rightButton() {
+    size = widthImage.clientWidth;
     if(counter>=car_image.length-1)return;
     car_slide.style.transition = "transform 0.4s ease-in-out";
     counter++;

@@ -1,4 +1,4 @@
-
+@import url("button-dropdown.css");
 * {
     margin:0;
     padding: 0;
@@ -17,6 +17,7 @@ button{
     background-color: #E76161;
     height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -54,10 +55,10 @@ button{
     cursor: pointer;
     color:black;
 }.icons {
+    margin-right: 90px;
     display: flex;
     justify-content: space-between;
     width: 225px;
-    transform: translateX(625px);
 }.category {
     width: 100%;
     top:70px;

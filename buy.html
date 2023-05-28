@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Purchasing</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="scripts/dropdown-profile-notif.js"></script>
     <script>
       $(document).ready(function(){
         $(".product-info h1").html(window.localStorage.getItem("name"));
         $(".product-info h3").html("$ "+window.localStorage.getItem("price"));
         $(".star-rating").html(window.localStorage.getItem("ratings"));
         $(".image-product img").attr("src" , window.localStorage.getItem("image")+".png");
+        var quant = 1;
+        $(".plus").click(function(){
+            quant++;
+            $("#quant").attr("value", quant);
+        });
+        $(".minus").click(function(){
+            if(!(quant<2)){
+                quant--;
+                $("#quant").attr("value", quant);
+            }
+        });
     });
     </script>
 </head>
@@ -31,13 +43,24 @@
         <div class="icons">
             <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <button><i class="fa-solid fa-bell"></i></button>
-            <button><i class="fa-solid fa-user"></i></button>
-        </div>
-        <div class="notif-drop-downs">
-        </div>
-        <div class="profile-drop-downs">
+            <button><i class="fa-solid fa-user" id="profile-button"></i></button>
         </div>
     </nav>
+    <div class="notif-drop-downs">
+        </div>
+    <div class="profile-drop-downs drp-down hide-profile">
+        <a href="">
+            <div class="profile">
+                <img src="" alt="">
+                JHUNRHICK TARRE
+            </div>
+        </a>
+        <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+        <a href=""><i class="fa-solid fa-headphones"></i>Contact us</a>
+        <a href=""><i class="fa-solid fa-users"></i>About us</a>
+        <a href=""><i class="fa-solid fa-message"></i>FAQ</a>
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a>
+    </div>
     <nav class="category">
         <span><a href="women.html">Women</a></span>
         <span><a href="men.html">Men</a></span>
@@ -75,10 +98,10 @@
                         <div class="sizes"> 
                             <span>Sizes: </span>
                             <div class="sizes-select">
-                                <button class="size-item"></button>
-                                <button class="size-item"></button>
-                                <button class="size-item"></button>
-                                <button class="size-item"></button>
+                                <button class="size-item">S</button>
+                                <button class="size-item">M</button>
+                                <button class="size-item">L</button>
+                                <button class="size-item">XL</button>
                             </div>
                         </div>
                     </div>
@@ -86,7 +109,7 @@
                         <span>Quality:</span>
                         <div class="quant-input">
                             <button class="quant-button minus">-</button>
-                            <input type="text" name="" id="" value="1" readonly>
+                            <input type="text" name="" id="quant" value="1" readonly>
                             <button class="quant-button plus">+</button>
                         </div>
                     </div>
