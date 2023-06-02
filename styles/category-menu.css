@@ -12,9 +12,6 @@ body{
     margin-bottom: 50px;
 }
 .cat-select{
-    margin: auto;
-    width:70%;
-    /* height: 39vh; */
     display: grid;
     justify-content: center;
     grid-template-columns: 200px 200px 200px 200px;

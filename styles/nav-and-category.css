@@ -46,6 +46,9 @@ button{
     border:none;
     outline: none;
     padding-left:10px;
+}.search-input {
+    display: flex;
+    align-items: center;
 }.search-input input::placeholder {
     color:#E76161;
 }.search-input button {
