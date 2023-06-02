@@ -4,121 +4,73 @@ $(document).ready(function(){
           "ImageProduct":"Grunge Punk Guys Tartan Flap Pocket Side Cargo Pants",
           "ProductName":"Grunge Punk Guys Tartan Flap Pocket Side Cargo Pants",
           "Price":45,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"Dress #TopRated",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Buckled Detail Slant Pocket Suit Pants ( Black )",
           "ProductName":"Men Buckled Detail Slant Pocket Suit Pants ( Black )",
           "Price":30,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Drawstring Waist Wide Leg Shorts ( Black )",
           "ProductName":"Men Drawstring Waist Wide Leg Shorts ( Black )",
           "Price":30,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress #TopRated",
           "Ratings":4.5
       },{
           "ImageProduct":"Men Flap Pocket Buckle Detail Drawstring Waist Cargo Pants",
           "ProductName":"Men Flap Pocket Buckle Detail Drawstring Waist Cargo Pants",
           "Price":45,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress #TopRated",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Flap Pocket Drawstring Waist Cargo Shorts",
           "ProductName":"Men Flap Pocket Drawstring Waist Cargo Shorts",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Flap Pocket Side Drawstring Waist Pants",
           "ProductName":"Men Flap Pocket Side Drawstring Waist Pants",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Flap Pocket Solid Overall Shorts Without Tee",
           "ProductName":"Men Flap Pocket Solid Overall Shorts Without Tee",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Fold Pleated Detail Bermuda Shorts",
           "ProductName":"Men Fold Pleated Detail Bermuda Shorts",
           "Price":50,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Fold Pleated Detail Slant Pocket Pants",
           "ProductName":"Men Fold Pleated Detail Slant Pocket Pants",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Fold Pleated Slant Pocket Suit Pants ( Black )",
           "ProductName":"Men Fold Pleated Slant Pocket Suit Pants ( Black )",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Gingham Print Drawstring Waist Wide Leg Pants",
           "ProductName":"Men Gingham Print Drawstring Waist Wide Leg Pants",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       },{
           "ImageProduct":"Men Letter _ Expression Print Flap Pocket Drawstring Waist Cargo Pants ( Black )",
           "ProductName":"Men Letter _ Expression Print Flap Pocket Drawstring Waist Cargo Pants ( Black )",
           "Price":40,
-          "Tags":[
-            "fruits",
-            "food",
-            "veggies",
-          ],
+          "Tags":"#Dress",
           "Ratings":4.9
       }
   ]`
@@ -131,7 +83,7 @@ $(document).ready(function(){
        <a href="../buy.html" class="shop-select" id="item`+key+`">
                 <div class="shop-card">
                     <div class="image-product">
-                        <img src="Men Bottom/`+json_dress[key].Tags[0]+`.png" alt="">
+                        <img src="Men Bottom/`+json_dress[key].ImageProduct+`.png" alt="">
                     </div>
                     <div class="product-info">
                         <h3>`+json_dress[key].ProductName+`</h3>

@@ -13,12 +13,14 @@ body{
 }
 .cat-select{
     margin: auto;
-    width:75%;
-    height: 39vh;
+    width:70%;
+    /* height: 39vh; */
     display: grid;
+    justify-content: center;
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 150px 150px 150px 150px;
-    gap:50px;
+    gap:40px;
+ 
 }.cat-card:hover {
     box-shadow: 0px 0px 20px 5px white;
     border:1px solid white;
