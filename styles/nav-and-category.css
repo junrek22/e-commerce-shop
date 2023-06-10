@@ -70,9 +70,10 @@ button{
     display: flex;
     align-items: center;
     justify-items: stretch;
-    justify-content: space-evenly;
+    justify-content: center;
     position: fixed;
     z-index: 1;
+    gap: 30px;
 }.category span {
     font-weight: bold;
     text-transform: uppercase;
