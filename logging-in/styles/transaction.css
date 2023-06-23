@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.nav-trans{
+    top: 0;
+    width: 100%;
+    background: #E76161;
+    position: fixed;
+}.nav-trans h1{
+    color:white;
+    padding: 10px;
+    margin-left: 20px;
+}.transaction-container{
+    height: calc(99vh - 55px);
+    margin-top: 60px;
+    overflow-y: scroll;
+}
+
+table, tr, th, td{
+    /* border:1px solid black; */
+}td img{
+    width: 250px;
+    height:150px;
+}.transaction-container table{
+    width: 80%;
+    margin: auto;
+}.Product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}tr td:first-child{
+   width: 20%;
+   
+}th, td{
+    text-align: center;
+}th{
+    font-size: 1.2em;
+    height: 90px;
+}td{
+    font-weight: bold;
+}.color-choose{
+    border-radius: 360px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}.customs{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}.nav-down{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background-color: #E08E6D;
+    display: flex;
+}.nav-down > div{
+    border:1px solid black;
+}.nav-down div:first-child{
+    flex: 2;
+}.nav-down div:last-child{
+    flex: 3;
+}.place-order{
+    padding: 10px;
+}.place-order table{
+    width: 60%;
+}.place-order table,.place-order tr,.place-order td{
+
+}.place-order tr td:first-child{
+    width: 40%;
+}.place-order tr td:last-child{
+    width: 10%;
+}.place-order td{
+    text-align: left;
+}
