@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.form-container{
+    font-family: sans-serif;
+    width: 35%;
+    height: 60vh;
+    background-color: #E08E6D;
+    border-radius: 15px;
+}h1{
+    text-align: center;
+    color:white;
+    margin:50px;
+}form{
+    width: 80%;
+    margin: auto;
+    height: 80%;
+}.form{
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}.input-cont p{
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    color:white;
+    margin:5px;
+}input {
+    background:none;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: #E08E6D;
+    width: 91%;
+}.input-style{
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}i{
+    padding-left: 5px;
+    color: #E08E6D;
+}button{
+    font-size: 1.2em;
+    width: 140px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E76161;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    margin: auto;
+}.button{
+    align-self: center;
+}.signup-forgotpw{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}.signup-forgotpw p{
+    color: white;
+}.signup-forgotpw a{
+    color: #C42424;
+    text-decoration: none;
+}
